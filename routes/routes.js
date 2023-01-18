@@ -4,7 +4,7 @@ let Router = require('express').Router();
 
 /**
  * @openapi
- * /:
+ * /api/:
  *   get:
  *     description: Fikor Api root!
  *     responses:
@@ -20,15 +20,15 @@ Router.get('/', function(req, res) {
 
 /**
  * @openapi
- * /hello:
+ * /api/index:
  *   get:
- *     description: Page saying hello
+ *     description: Page for test
  *     responses:
  *       200:
- *         description: Returns a mysterious string.
+ *         description: Returns a beautiful congrat.
  */
-Router.get('/hello', function(req, res, next) {
-    res.send('Hello world');
+Router.get('/index', function(req, res, next) {
+    res.send('Welcome to Fikor project. A 25 millions $ project with 1 billard of users.');
 });
 
 // Export API routes
